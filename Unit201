@@ -1,0 +1,27 @@
+//Created by: Khoa
+
+import java.util.ArrayList;
+
+public class Unit201 {
+	
+	private ArrayList stackA;
+	
+	public Unit201() {
+		
+		stackA = new ArrayList();
+		
+	}
+	
+	public void push(int number) {
+		
+		stackA.add(number);
+		
+	}
+	
+	public void printStack() {
+		
+		System.out.println("Here is the list you created: " + stackA);
+		
+	}
+	
+}
