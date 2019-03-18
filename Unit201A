@@ -1,0 +1,27 @@
+//Created by: Khoa
+
+import java.util.Scanner;
+
+public class Unit201A {
+
+	public static void main(String[] args) {
+		
+		Unit201 stackB = new Unit201();
+		Scanner input = new Scanner(System.in);
+		int number = -1;
+		
+		do {
+			
+			System.out.print("Please enter a number to add to the list. When you're finished entering all your numbers, enter -1.");
+			number = input.nextInt();
+			if (number > -1)
+				stackB.push(number);
+		}
+		
+		while (number != -1);
+		stackB.printStack();
+		input.close();
+
+	}
+
+}
